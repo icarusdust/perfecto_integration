@@ -25,10 +25,10 @@ workflows:
       - name: Get Flutter packages
         script: |
           cd . && flutter packages pub get
-     - name: Build Android Test release
-       script: |
+      - name: Build Android Test release
+        script: |
           ./gradlew assembleAndroidTest
-     - name: Build APK with Flutter
+      - name: Build APK with Flutter
         script: |
           flutter build apk --release 
       # - name: Flutter Integration Tests iOS
