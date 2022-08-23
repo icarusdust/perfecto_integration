@@ -21,7 +21,7 @@
     "projectVersion": "v1.0",
     "tags": [
       "espresso", "plugin"  ],
-    "apkPath": "YOUR_APK_PATH",
+    "apkPath": "build/app/outputs/flutter-apk/app-release.apk",
     "testApkPath": "YOUR_TEST_APK_PATH",
     "installationDetails" : {"preCleanUp" : "true"},
     "postExecution" : {"uninstall" : "false" },
