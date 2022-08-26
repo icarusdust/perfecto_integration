@@ -17,6 +17,7 @@ workflows:
       - name: Set up key properties
         script: |
           # echo $ANDROID_FIREBASE_SECRET > $FCI_BUILD_DIR/android/app/google-services.json
+          echo $CERTIFICATE_PRIVATE_KEY
           echo $CM_KEYSTORE | base64 --decode > /tmp/keystore.keystore
 
       - name: Set up local.properties
